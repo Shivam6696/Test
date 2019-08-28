@@ -13,8 +13,8 @@ public class Test {
 	public static void main(String arg[]) throws Exception {
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-		Employee s = (Employee) context.getBean("e");
-		s.show();
+		Employee emp= (Employee) context.getBean("e");
+		emp.show();
 	}
 
 }
